@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Clase 2</title>
+    <link rel="stylesheet" href="../css/clase2.css">
+</head>
+<body>
+    <header>
+        <h1>Ejercicio Clase 2</h1>
+        <h2>Ejercicio nro 2</h2>
+    </header>
+    <main>
+        <div class="box">
+            <h2>Calculadora</h3>
+                <div class="container">
+                    <input type="number" id="operando1" placeholder="ingrese numero">
+                    <input type="number" id="operando2" placeholder="ingrese numero">
+                    <button onclick="sumar()"> (+) Suma</button>
+                    <button onclick="restar()"> (-) Resta</button>
+                    <button onclick="multiplicar()"> (*) Multiplicación</button>
+                    <button onclick="dividir()"> (/) División</button>
+            
+                    <h3>Resultado: <span id="resultado">0</span></h3>
+                </div>
+            <div class="ej1">
+                <h2>ejercicio nro 1</h2>
+                <p>Tengo desarrollada la siguiente función en javascript <br>
+                    function suma (a,b,callback){<br>
+                    let c = a +b;<br>
+                    callback();<br>
+                    }
+                    ¿Que es el tercer parámetro recibido?
+                    ¿En que casos es obligatorio desarrollar este tipo de funciones?
+                    Realizar un llamado a la función de ejemplo.
+                </p>
+                <h3>Respuesta</h3>
+                <p>
+                    La función suma toma dos parámetros a y b y un tercer parámetro callback. El tercer parámetro, callback, es una función que se pasa como argumento y se ejecutará al final de la función suma.
+                    <br><br>
+                    Este patrón se llama "callback". Los callbacks son funciones que se pasan como argumentos a otras funciones y se ejecutan después de que alguna operación ha sido completada. En este caso, la función callback se ejecuta después de calcular la suma de a y b.
+                    <br><br>
+                    Este tipo de funciones con callbacks son útiles en situaciones asíncronas o cuando queremos que cierto código se ejecute después de que una operación particular haya concluido.
+                </p>
+            </div>
+        </div>
+        
+    </main>
+    
+    <footer>
+        <h4>Create by German Cano</h4>
+    </footer>
+    
+    <script src="../js/clase2.js"></script>
+    
+
+</body>
+</html>
+
