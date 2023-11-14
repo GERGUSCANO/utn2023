@@ -21,22 +21,22 @@
                 <label for="titulo">Titulo</label>
                 <input type="text" id="titulo" name="titulo" placeholder="ingrese titulo" required>
                 <label for="descripción">Descripcion</label>
-                <input type="text" name="descripción" id="descripción" placeholder="ingrese descripción" required>
+                <textarea name="descripcion" id="descripcion" cols="42" rows="5"></textarea>
                 <label for="Tiempo">Tiempo</label>
-                <input type="datetime-local" name="Tiempo" id="Tiempo" required>                
+                <input type="number" name="Tiempo" id="Tiempo" required>                
                 <label for="imagen">Imagen</label>
-                <input type="image" src="#" alt="imagen" >
+                <input type="file" name="imagen" id="imagen">
                 <label for="responsable">Responsable</label>
                 <input type="text" name="responsable" id="responsable" placeholder="ingrese los datos" required>
                 <label for="">Estado</label>
-                <select id="estado" name="estado" onchange="actualizarEstado()">
-                    <option value="pendiente">Pendiente</option>
-                    <option value="en-proceso">En Proceso</option>
-                    <option value="en-testing">En Testing</option>
-                    <option value="completada">Completada</option>
+                <select id="estado" name="estado" onchange="cambiarEstado()">
+                    <option value="Pendiente">Pendiente</option>
+                    <option value="En proceso">En Proceso</option>
+                    <option value="En testing">En Testing</option>
+                    <option value="Completada">Completada</option>
                 </select>
-        
-                <button type="submit">Guardar</button>
+                <label for="seleccionado">Estado seleccionado: <span id="estadoSeleccionado"></span></label>
+                <button type="submit">Enviar</button>
             </form>
             
         </div>
